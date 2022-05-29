@@ -1,4 +1,4 @@
-baseURL       = "https://saans.co.uk/"
+baseURL       = "./"
 languageCode  = "en-uk"
 title         = "Saans Psychotherapy"
 theme         = "roxo"
