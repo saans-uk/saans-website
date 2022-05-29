@@ -17,7 +17,7 @@ summarylength = 25
     weight  = 2
   [[menu.nav]]
     name    = "How the process works"
-    url     = "/"
+    url     = "process"
     weight  = 3
   [[menu.nav]]
     name    = "Resources"
