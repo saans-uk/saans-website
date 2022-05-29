@@ -1,0 +1,50 @@
+{{ with .Site.Params.portfolio }}
+  {{ if .enable }}
+  <section class="site-project" id="welcome">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>{{ .title }}</h2>
+<!--            <p>{{ .subtitle }}</p>-->
+          </div>
+        </div>
+        <div class="row gx-5 gx-sm-0 align-items-center">
+          <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0 col-sm-12 gx-0">
+            <div class="container-fluid px-lg-5">
+              <h4 class="text-center ">What does Saans mean?</h4>
+              <p>
+                Saans, is a Hindi (one of the languages from india) word, which simply means to breathe. In this
+                day and age, with so much happening in our world, we can get caught up in the ups and downs, and
+                sometimes forget to breathe.
+              </p>
+              <p>
+                A breath is so essential to being alive. You may have experienced learning how to breathe in a
+                meditation or yoga, mindfulness or pilates class, and I am hoping you experienced a deep
+                sensation connecting you to your heart, soul and body. And it is this connection we lose when we
+                are anxious, uncertain, nervous, angry, sad. Sometimes, when we are filled with so many
+                emotions, we can forget to breathe. A breath should be one that allows us to feel fully and be
+                alive.
+              </p>
+              <p>
+                I chose this word for the practice as it symbolically represents many times in life when we just
+                forget to breathe. I feel that in working through your life concerns and questions of life, and
+                living, we can work together and learn to breathe a full breath, and connect to ourselves
+                deeply.
+
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-0">
+            <h4 class="mb-1 mt-4" style="text-align: left"><i>
+              "The knowledge of the past stays with us. To let go is to release the images and emotions, the
+              grudges and fears, the clingings and disappointments of the past that bind our spirit..."
+            </i></h4>
+            <p style="text-align: right"><i>- Jack Kornfield</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
