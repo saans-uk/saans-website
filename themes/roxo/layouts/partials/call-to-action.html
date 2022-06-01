@@ -1,9 +1,23 @@
 {{ with .Site.Params.call_to_action }}
   {{ if .enable }}
+
+<style>
+  .top {
+    --offset: 50px;
+
+    position: sticky;
+    bottom: 20px;
+    margin-right:20px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    float: right;
+  }
+</style>
+<a href="#contact" class="btn top btn-sm-rounded btn-primary"><i class="fa fa-solid fa-message-lines"></i> Get in Touch</a>
 <section class="site-contact" id="contact">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 ml-auto">
+      <div class="col-12">
         <div class="wrapper">
           <div class="row no-gutters justify-content-center">
             <div class="col-md-12">
@@ -14,7 +28,7 @@
                 <div id="form-message-warning" class="mb-4"></div>
                 <form method="POST" id="contactForm"  class="contactForm" name="contact" data-netlify="true">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-12">
                       <div class="form-group">
                         <label class="label" for="name">Full Name</label>
                         <input type="text" class="form-control" name="name" id="name"

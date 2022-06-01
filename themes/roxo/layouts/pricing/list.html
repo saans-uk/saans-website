@@ -1,0 +1,81 @@
+{{ define "main" }}
+
+<section class="site-about-header">
+    <div class="container" style="text-align: left">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>Psychotherapy Fees</h2>
+                </div>
+            </div>
+            <div class="col-12">
+                <h3>
+                    Sessions, Fees and cancellations:
+                </h3>
+                <p>
+                    Sessions are to be scheduled weekly, except when they are dyads or family therapy sessions.
+
+                    Every session will be 50 minutes for individual therapy. For dyads, couples I offer 60/90 minute
+                    sessions and for family therapy, I offer 90 and 120 minutes’ sessions. Please note dyads, couples,
+                    and family therapy sessions may not be weekly, a decision will be made as and when we progress in
+                    therapy.
+                </p>
+
+                <table class="table table-hover" style="font-size: large">
+                    <thead>
+                    <tr style="color: black">
+                        <th scope="col">Session Type</th>
+                        <th scope="col">Fees (GBP)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Individual</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>Couples: 60 / 90</td>
+                        <td>165 / 200</td>
+                    </tr>
+                    <tr>
+                        <td>Family Therapy: 90 / 120</td>
+                        <td>200 / 250</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="text-danger">
+                    Cancellations are to be made 24 hours in advance, else you will be charged for the session fully.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="site-expertise">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      {{ with .Params.expertise_title }}-->
+<!--      <div class="col-md-5">-->
+<!--        <div class="section-title">-->
+<!--          <h2>{{ . }}</h2>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      {{ end }}-->
+<!--      <div class="col-md-6">-->
+<!--        <ul class="site-expertise-list">-->
+<!--          {{ range .Params.expertise_sectors }}-->
+<!--          <li>{{ . }}</li>-->
+<!--          {{ end }}-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--{{ partial "clients.html" . }}-->
+
+<!--{{ partial "team.html" . }}-->
+
+{{ partial "call-to-action.html" . }}
+
+{{ end }}
