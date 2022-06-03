@@ -1,38 +1,69 @@
 {{ with .Site.Data.testimonial }}
-  {{ if .enable }}
-  <section class="site-testimonial">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12">
-          <div class="section-title">
-            <h2>
-              {{ .title }}
-            </h2>
-            <p>
-              {{ .subtitle }}
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-8 col-md-6 col-lg-4 order-lg-0 mb-4">
-          <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle"
-                                         src="images/why.jpg"
-                                         alt="..."/></div>
-        </div>
-        <div class="col-12 col-lg-8 order-lg-1">
-          <p class="lead fw-normal text-muted ">
-            Therapy is effective not simply just by talking about your problems, that is only the first step.
-            But therapy is about working consciously towards your abilities to change the things you can change
-            and to accept what you can’t.
-          </p>
-          <p class="lead fw-normal text-muted mb-5 mb-lg-3">
-            Psychotherapy creates a unique space where you can explore your feelings, thoughts and behaviour in
-            a non-judgmental, confidential and supportive environment. The therapeutic alliance, which is the
-            quality of the relationship created between you and your therapist, is pertinent for therapy to be
-            effective and one that fosters self-awareness, trust and change.
-          </p>
-        </div>
-      </div>
+{{ if .enable }}
+<style>
+    .parallax {
+        opacity: 0.5;
+    }
+
+    .parallax:after {
+        background: linear-gradient(to bottom, transparent 0%, black 100%);
+    }
+</style>
+<section class="site-hero" style="height: 500px !important; background: black !important; opacity: 0.9">
+    <div data-parallax-image="images/rocks.jpeg" class="parallax align-items-center" style="z-index: 1000 !important;">
+
     </div>
-  </section>
-  {{ end }}
+    <div class="col-8" style="text-align: center; color: white !important;">
+        <h2 class="display-4" style="text-align: left; color: white">
+            <i><b>"What you are looking for is already in you..You already are everything you are seeking"</b></i>
+        </h2>
+        <h2 class="display-4" style="text-align: right; color: white"><b><i>- Thich Nhat Hanh</i></b></h2>
+    </div>
+</section>
+<section class="site-testimonial">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>
+                        {{ .title }}
+                    </h2>
+                    <p>
+                        {{ .subtitle }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4 order-lg-0 mb-4">
+                <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle"
+                                               src="images/why.jpg"
+                                               alt="..."/></div>
+            </div>
+            <div class="col-12 col-lg-8 order-lg-1">
+                <p class="lead fw-normal text-muted ">
+                    Therapy is effective not simply just by talking about your problems, that is only the first step.
+                    But therapy is about working consciously towards your abilities to change the things you can change
+                    and to accept what you can’t.
+                </p>
+                <p class="lead fw-normal text-muted mb-5 mb-lg-3">
+                    Psychotherapy creates a unique space where you can explore your feelings, thoughts and behaviour in
+                    a non-judgmental, confidential and supportive environment. The therapeutic alliance, which is the
+                    quality of the relationship created between you and your therapist, is pertinent for therapy to be
+                    effective and one that fosters self-awareness, trust and change.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="site-hero" style="height: 500px !important; background: black !important; opacity: 0.9">
+    <div data-parallax-image="images/agony.jpg" class="parallax align-items-center" style="z-index: 1000 !important;">
+
+    </div>
+    <div class="col-8" style="text-align: center; color: white !important;">
+        <h2 class="display-4" style="text-align: center; color: white">
+            <i><b>"There is no greater agony than beating an untold story inside you"</b></i>
+        </h2>
+        <h2 class="display-4" style="text-align: right; color: white"><b><i>- Maya Angelou</i></b></h2>
+    </div>
+</section>
+{{ end }}
 {{ end }}
