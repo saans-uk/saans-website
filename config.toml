@@ -20,7 +20,7 @@ summarylength = 25
     url     = "process"
     weight  = 3
   [[menu.nav]]
-    name    = "Fees"
+    name    = "Session & Fees"
     url     = "pricing"
     weight  = 4
   [[menu.nav]]
