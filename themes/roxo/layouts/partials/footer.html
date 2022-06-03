@@ -72,7 +72,13 @@
 
 </footer>
 <a id="getInContact" href="#contact" class="btn top hide btn-sm-rounded btn-primary"><i
-        class="fa fa-solid fa-message-lines"></i> Get in Touch</a>
+        class="fa fa-solid fa-message-lines"></i>Get in Touch</a>
+{{ $formhandler := resources.Get "js/formhandler.js" | minify }}
+<script src="{{ $formhandler.Permalink }}"></script>
+{{ $vendor := resources.Get "js/vendor.js" | minify }}
+<script src="{{ $vendor.Permalink }}"></script>
+{{ $script := resources.Get "js/script.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>
 <script>
   // ScrollReveal({duration: 2000}).reveal('section');
   ScrollReveal({duration: 2000}).reveal('.reveal');
