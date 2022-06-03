@@ -81,23 +81,5 @@
         </div>
     </div>
 </section>
-    <a id="getInContact" href="#contact" class="btn top hide btn-sm-rounded btn-primary"><i
-            class="fa fa-solid fa-message-lines"></i> Get in Touch</a>
-<script>
-    const scrollToTopButton = document.getElementById('getInContact');
-    const scrollFunc = () => {
-        let y = window.scrollY;
-        if (y > 100) {
-            scrollToTopButton.className = "btn top btn-sm-rounded btn-primary show";
-        } else {
-            scrollToTopButton.className = "btn top btn-sm-rounded btn-primary hide";
-        }
-    };
-
-    window.addEventListener("scroll", scrollFunc);
-</script>
-<script>
-    new universalParallax().init();
-</script>
 {{ end }}
 {{ end }}
