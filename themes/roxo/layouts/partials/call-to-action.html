@@ -1,78 +1,128 @@
 {{ with .Site.Params.call_to_action }}
-  {{ if .enable }}
+{{ if .enable }}
 
 <style>
-  .top {
-    --offset: 50px;
+    .top {
+        position: sticky;
+        bottom: 50px;
+        margin-right: 20px;
+        place-self: end;
+        /*margin-top: calc(100vh + 50px);*/
+        float: right;
+    }
 
-    position: sticky;
-    bottom: 20px;
-    margin-right:20px;
-    place-self: end;
-    margin-top: calc(100vh + var(--offset));
-    float: right;
-  }
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
 </style>
-<a href="#contact" class="btn top btn-sm-rounded btn-primary"><i class="fa fa-solid fa-message-lines"></i> Get in Touch</a>
+
 <section class="site-contact" id="contact">
-  <div class="container">
-    <div class="row" style="width: 100%">
-      <div class="col-12" style="width: 100%">
-        <div class="wrapper">
-          <div class="row no-gutters justify-content-center">
-            <div class="col-md-12">
-              <div class="contact-wrap w-100 p-md-5 p-4">
-                <div class="section-title">
-                  <h2 class="section-title mb-4">Contact Us</h2>
+    <div class="container">
+        <div class="row" style="width: 100%">
+            <div class="col-12" style="width: 100%">
+                <div class="wrapper">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-12">
+                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                <div class="section-title">
+                                    <h2 class="section-title mb-4">Contact Us</h2>
+                                </div>
+                                <div id="form-message-warning" class="mb-4"></div>
+                                <form method="POST" id="contactForm" class="contactForm" name="contact"
+                                      data-netlify="true">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label" for="name">Full Name</label>
+                                                <input type="text" class="form-control" name="name" id="name"
+                                                       placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label" for="email">Email Address</label>
+                                                <input type="email" class="form-control" name="email" id="email"
+                                                       placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label" for="subject">Subject</label>
+                                                <input type="text" class="form-control" name="subject" id="subject"
+                                                       placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="label">Message</label>
+                                                <textarea name="message" class="form-control" id="message" cols="30"
+                                                          rows="4" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" style="margin-top: 20px">
+                                            <div class="form-group">
+                                                <input type="submit" value="Send Message" class="btn btn-primary">
+                                                <div class="submitting"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="form-message-warning" class="mb-4"></div>
-                <form method="POST" id="contactForm"  class="contactForm" name="contact" data-netlify="true">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="label" for="name">Full Name</label>
-                        <input type="text" class="form-control" name="name" id="name"
-                               placeholder="Name">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="label" for="email">Email Address</label>
-                        <input type="email" class="form-control" name="email" id="email"
-                               placeholder="Email">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="label" for="subject">Subject</label>
-                        <input type="text" class="form-control" name="subject" id="subject"
-                               placeholder="Subject">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="label">Message</label>
-                        <textarea name="message" class="form-control" id="message" cols="30"
-                                  rows="4" placeholder="Message"></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-12" style="margin-top: 20px">
-                      <div class="form-group">
-                        <input type="submit" value="Send Message" class="btn btn-primary">
-                        <div class="submitting"></div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
+
             </div>
-          </div>
         </div>
-
-      </div>
     </div>
-  </div>
 </section>
+<section class="site-contact" style="margin: 0">
+    <a id="getInContact" href="#contact" class="btn top btn-sm-rounded btn-primary"><i
+            class="fa fa-solid fa-message-lines"></i> Get in Touch</a>
+</section>
+<script>
+    // Set a variable for our button element.
+    const scrollToTopButton = document.getElementById('getInContact');
 
-  {{ end }}
+    // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+    const scrollFunc = () => {
+        // Get the current scroll value
+        let y = window.scrollY;
+
+        // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+        if (y > 0) {
+            scrollToTopButton.className = "btn top btn-sm-rounded btn-primary show";
+        } else {
+            scrollToTopButton.className = "btn top btn-sm-rounded btn-primary hide";
+        }
+    };
+
+    window.addEventListener("scroll", scrollFunc);
+
+    const scrollToTop = () => {
+        // Let's set a variable for the number of pixels we are from the top of the document.
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
+        // We'll also animate that scroll with requestAnimationFrame:
+        // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            // ScrollTo takes an x and a y coordinate.
+            // Increase the '10' value to get a smoother/slower scroll!
+            window.scrollTo(0, c - c / 10);
+        }
+    };
+
+    // When the button is clicked, run our ScrolltoTop function above!
+    scrollToTopButton.onclick = function (e) {
+        e.preventDefault();
+        scrollToTop();
+    }
+</script>
+{{ end }}
 {{ end }}
