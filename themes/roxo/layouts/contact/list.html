@@ -9,7 +9,7 @@
               <div class="contact-wrap w-100 p-md-5 p-4">
                 <h1 class="mb-4">Contact Us</h1>
                 <div id="form-message-warning" class="mb-4"></div>
-                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                <form id="contactForm" method="POST" name="contactForm" class="contactForm" action="/action_page.php">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -41,8 +41,7 @@
                     </div>
                     <div class="col-md-12" style="margin-top: 20px">
                       <div class="form-group">
-                        <input type="submit" value="Send Message" class="btn btn-primary">
-                        <div class="submitting"></div>
+                        <button type="submit" value="Send Message" class="btn btn-primary"></button>
                       </div>
                     </div>
                   </div>
