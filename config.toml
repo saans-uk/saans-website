@@ -12,7 +12,7 @@ summarylength = 25
     url     = "./"
     weight  = 1
   [[menu.nav]]
-    name    = "About"
+    name    = "About Me"
     url     = "about"
     weight  = 2
   [[menu.nav]]
@@ -102,7 +102,7 @@ summarylength = 25
       [params.footer.sitemap]
         title   = "Sitemap"
         [[params.footer.sitemap.link]]
-          name = "About"
+          name = "About Me"
           url  = "about"
         [[params.footer.sitemap.link]]
           name = "Process"
