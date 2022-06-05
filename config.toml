@@ -96,8 +96,8 @@ summarylength = 25
     [params.footer.contactInfo]
       title   = "Contact Info"
       address = "713 Elmwood St.<br>Prior Lake, MN 55372"
-      phone   = "PHONE NUMBER HERE"
-      email   = "info@saans.co.uk"
+      phone   = "+44 7883 786436"
+      email   = "letstalk@saans.co.uk"
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"
