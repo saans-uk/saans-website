@@ -108,7 +108,7 @@ summarylength = 25
           name = "Process"
           url  = "process"
         [[params.footer.sitemap.link]]
-          name = "Pricing"
+          name = "Sessions & Fees"
           url  = "pricing"
         [[params.footer.sitemap.link]]
           name = "Resources"
