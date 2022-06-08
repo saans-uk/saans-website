@@ -40,7 +40,7 @@ summarylength = 25
   description = "Saans Psychotherapy | Just breathe"
   author = "Mayank Sharma"
   # Google Analitycs
-  googleAnalitycsID = "Your ID"
+  googleAnalitycsID = "G-MJBE92T8HS"
   # We're using formspree.io for form handling, paste your formspree url below
   formspreeFormUrl  = "https://formspree.io/myykjpje"
 
