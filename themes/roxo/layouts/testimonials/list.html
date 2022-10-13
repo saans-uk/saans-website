@@ -1,0 +1,260 @@
+{{ define "main" }}
+
+<section class="site-about-header">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>Testimonials</h2>
+                    <p>Hear from people who I have worked with</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="row">
+                    <div class="testimonialBox">
+                        <img src="https://i.ibb.co/dcWs6jB/quotes.jpg" alt="">
+                        <p class="">
+                            Shruti has always given me the space to allow myself to be open and share my feelings,
+                            without the fear of judgement. Shruti guided myself and my family through a session,
+                            ensuring each one of us feels valued and heard. I couldn’t recommend Shruti enough!
+                        </p>
+
+                        <div class="row">
+                            <div class="col-3 col-sm-4 col-md-3 col-lg-3 col-xl-2 float-left pr-0">
+                                <div class="testimonialCircle text-center">
+                                    <img src="https://i.ibb.co/yfdd2fb/user.png" class="imgNotAvailable" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9 col-sm-8 float-left testimonialUser text-truncate pl-0">
+                                <span class="mainHeading">Female, adolescent to young adult, 4 years in therapy</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="testimonialBox">
+                        <img src="https://i.ibb.co/dcWs6jB/quotes.jpg" alt="">
+                        <p class="">
+                            I have been a long-time client of Shruti because she provided a very open and non-
+                            judgemental environment along with a warm presence to hold space for what I needed to
+                            release. With this underpinning, she was able to frame tensions (issues) from the anecdotes I
+                            share and highlight the area of self-work that I needed to tackle. Shruti is versatile in her
+                            methods of intervention, using art therapy, whiteboard diagramming and meditative practices
+                            that helped me gain awareness and centred-ness, which eventually shifted my mind-set to one
+                            of being instead of doing.
+                        </p>
+
+                        <div class="row">
+                            <div class="col-3 col-sm-4 col-md-3 col-lg-3 col-xl-2 float-left pr-0">
+                                <div class="testimonialCircle text-center">
+                                    <img src="https://i.ibb.co/yfdd2fb/user.png" class="imgNotAvailable" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9 col-sm-8 float-left testimonialUser text-truncate pl-0">
+                                <span class="mainHeading">Female, in her thirties, 5 years in therapy</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <!-- testimonial start from here -->
+                <div class="testimonialBox">
+                    <img src="https://i.ibb.co/dcWs6jB/quotes.jpg" alt="">
+                    <p class="">
+                        Shruti helped me through a difficult period in my life which included death of a parent,
+                        intercontinental relocation and more. It was great to have somebody to talk to, who listened
+                        without prejudice, asked questions which made me discover formerly unknown connections
+                        and mechanisms and supported me on my way out of misery. Shruti was always reliable,
+                        down to earth and extremely patient with me. Talking to a psychotherapist is not easy and
+                        sometimes I was exhausted after that hour, but on the long term it is a little bit like going to
+                        a
+                        spa - a spa for the soul, that helps to understand oneself and to become a whole person. 
+                        I would fully recommend doing therapy with Shruti, to anyone interested in finding out more
+                        about him/herself and looking for answers within.
+                        My more than two years of therapy with Shruti were always and exclusively online - I
+                        (unfortunately) never met her in person. But I am convinced that a person to person therapy
+                        could not have helped me better. It is wonderful to have this chance to be completely flexibel
+                        in terms of times and location. And some might even prefer not to go to a clinic.
+
+                        P.S.: And in addition I should mention that even though English is not my mother tongue
+                        Shruti and I never had a problem communicating. So doing an online therapy this way might
+                        be an answer to all the months long waiting lists for therapy in countries like Germany.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-3 col-sm-4 col-md-3 col-lg-3 col-xl-2 float-left pr-0">
+                            <div class="testimonialCircle text-center">
+                                <img src="https://i.ibb.co/yfdd2fb/user.png" class="imgNotAvailable" alt="">
+                            </div>
+                        </div>
+                        <div class="col-9 col-sm-8 float-left testimonialUser text-truncate pl-0">
+                            <span class="mainHeading">Female, in her fifties, 4 years in therapy (with a a break of a total of 4-6
+months in between as and when needed)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="site-expertise">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      {{ with .Params.expertise_title }}-->
+<!--      <div class="col-md-5">-->
+<!--        <div class="section-title">-->
+<!--          <h2>{{ . }}</h2>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      {{ end }}-->
+<!--      <div class="col-md-6">-->
+<!--        <ul class="site-expertise-list">-->
+<!--          {{ range .Params.expertise_sectors }}-->
+<!--          <li>{{ . }}</li>-->
+<!--          {{ end }}-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--{{ partial "clients.html" . }}-->
+
+<!--{{ partial "team.html" . }}-->
+
+<style>
+    /*
+/*	Copyright (c) 2020 karanjeet singh
+/*	Author: karanjeet singh
+*/
+
+
+    .testimonialHead > h3 {
+        color: #9b9c9d;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .testimonialHead > h2 {
+        font-weight: 600;
+    }
+
+    .testimonialBox {
+        background-color: #ffffff;
+        padding: 30px;
+        margin-bottom: 30px;
+        -webkit-box-shadow: -1px -1px 31px -5px rgba(184, 184, 184, 0.49);
+        -moz-box-shadow: -1px -1px 31px -5px rgba(184, 184, 184, 0.49);
+        box-shadow: -1px -1px 31px -5px rgba(184, 184, 184, 0.49);
+        overflow: hidden;
+    }
+
+    .testimonialBox > p {
+        color: #9b9c9d;
+        margin: 30px 0;
+        position: relative;
+        z-index: 1;
+        font-size: 18px;
+    }
+
+    .testimonialCircle {
+        width: 48px;
+        height: 48px;
+        background-color: #9a9a9a;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .imgNotAvailable {
+        padding-top: 12px;
+    }
+
+    .imgAvailable {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .testimonialUser {
+        margin-top: 12px;
+    }
+
+    .testimonialUser span {
+        font-size: 16px;
+    }
+
+    .videoTestimonal {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .videoTestimonal:before {
+        content: "";
+        position: absolute;
+        background: url('https://i.ibb.co/7ghxNYt/video-Icon.png') no-repeat;
+        width: 207px;
+        height: 207px;
+        top: -50px;
+        right: -48px;
+        z-index: 0;
+    }
+
+    .videoIcon {
+        position: absolute;
+        margin-left: 28px;
+        top: -6px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #ee0808;
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(238, 8, 8, 0.8);
+        animation: pulse 2s infinite;
+    }
+
+    @-webkit-keyframes pulse {
+        0% {
+            -webkit-box-shadow: 0 0 0 0 rgba(238, 8, 8, 0.8);
+        }
+
+        70% {
+            -webkit-box-shadow: 0 0 0 10px rgba(238, 8, 8, 0);
+        }
+
+        100% {
+            -webkit-box-shadow: 0 0 0 0 rgba(238, 8, 8, 0);
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            -moz-box-shadow: 0 0 0 0 rgba(238, 8, 8, 0.8);
+            box-shadow: 0 0 0 0 rgba(238, 8, 8, 0.4);
+        }
+
+        70% {
+            -moz-box-shadow: 0 0 0 10px rgba(238, 8, 8, 0);
+            box-shadow: 0 0 0 10px rgba(238, 8, 8, 0);
+        }
+
+        100% {
+            -moz-box-shadow: 0 0 0 0 rgba(238, 8, 8, 0);
+            box-shadow: 0 0 0 0 rgba(238, 8, 8, 0);
+        }
+    }
+
+    .videoIcon > img {
+        position: relative;
+        top: -5px;
+        right: -7px;
+    }
+
+</style>
+
+{{ partial "call-to-action.html" . }}
+
+{{ end }}
